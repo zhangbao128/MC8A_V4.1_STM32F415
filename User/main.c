@@ -1,4 +1,6 @@
 
+
+/*zhang bao ...*/
 #include "stm32f4xx.h"
 #include "can.h"
 #include "Verify.h"
@@ -183,17 +185,17 @@ int main(void)
 		LedBlink();
 		
 		
-		/*Ó²ÏÞÎ»*/
+		/*ç¡¬é™ä½*/
 		if(((GPIOC->IDR >> 5 	& 1) || (GPIOB->IDR & 1)) && motor1.IsRunning == RUNNING)
 		{
 			motor1.LimitFlag = 1;
 			if(motor1.RevStopcmd != 1 && motor1.IsRunning != STOPPED && motor1.CurrentIndex <= motor1.ReversId)
-			{/*Èç¹ûÒÑ¾­ÔËÐÐµ½¼õËÙ½×¶Î£¬ºöÂÔÍ£Ö¹Ö¸Áî*/
+			{/*å¦‚æžœå·²ç»è¿è¡Œåˆ°å‡é€Ÿé˜¶æ®µï¼Œå¿½ç•¥åœæ­¢æŒ‡ä»¤*/
 					motor1.RevStopcmd = 1;
 					motor1.StopIndex = motor1.CurrentIndex;
 			}
 		}
-		/*ÈíÏÞÎ»*/
+		/*è½¯é™ä½*/
 		if(motor1.Dir == PLUS)
 		{
 			if(motor1.CurrentPos >= (motor1.pLimit - 100))
