@@ -1,4 +1,4 @@
-/*this is a MC8A_MB*/
+/*this editor1 make some changes*/
 #include "stm32f4xx.h"
 #include "can.h"
 #include "Verify.h"
