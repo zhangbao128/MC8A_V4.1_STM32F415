@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-/*this is master make some changes*/
-/*changes -- 1*/
 
-=======
-/*this is a MC8A_MB*/
->>>>>>> parent of 104503e... 管理员的修改
 #include "stm32f4xx.h"
 #include "can.h"
 #include "Verify.h"
