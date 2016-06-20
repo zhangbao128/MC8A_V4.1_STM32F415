@@ -1,4 +1,4 @@
- 
+/*this is a MC8A_MB*/
 #include "stm32f4xx.h"
 #include "can.h"
 #include "Verify.h"
@@ -7,8 +7,6 @@
 #include "motionCtrl_S.h"
 #include "encoder.h"
 #include "SysTick.h"
-//#include "WinWatchDog.h"
-
 
 extern CanTxMsg TxMsg;	
 extern CanRxMsg RxMsg; 
